@@ -15,7 +15,8 @@ class Solution {
             q.pop();
             Node*node=p.first;
             int index=p.second;
-            mp[index]=node->data;
+            mp[index]=node->data; // whenever finds any value assigne to any line and get another 
+            // node for that value again it replace but in top view it not this 
             if(node->left!=NULL){
                 q.push({node->left,index-1});
             }
