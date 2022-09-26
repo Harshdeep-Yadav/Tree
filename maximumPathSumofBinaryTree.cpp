@@ -18,7 +18,7 @@ public:
         int left=max(0,maxPathDown(node->left,maxi)); // this give us left side maximum sum
         int right=max(0,maxPathDown(node->right,maxi));// this for right
         
-        maxi=max(maxi,left+right+node->val); // storing maxi mum sum when backtracking 
+        maxi=max(maxi,left+right+node->val); // storing maximum sum when backtracking 
         return max(left,right)+node->val; 
 //         max(left,right) -> will tell us which path we have to follow or how have large value
     }
